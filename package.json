@@ -7,13 +7,18 @@
     "type": "git",
     "url": "https://github.com/crudh/timereport"
   },
-  "license": "Apache License, Version 2.0",
+  "license": "Apache-2.0",
   "main": "server/server.js",
+  "browserDependencies": {
+    "react": "^0.13.3",
+    "seamless-immutable": "^2.3.2"
+  },
   "dependencies": {
-    "express": "^4.12.0",
-    "fluxxor": "^1.5.2",
-    "react": "^0.13",
-    "seamless-immutable": "^2.0.1"
+    "babelify": "^6.1.2",
+    "express": "^4.12.4",
+    "gulp-nodemon": "^2.0.3",
+    "react": "^0.13.3",
+    "seamless-immutable": "^2.3.2"
   },
   "devDependencies": {
     "babelify": "^5.0.3",
