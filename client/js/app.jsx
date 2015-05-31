@@ -1,5 +1,4 @@
-const React = require('react');
-'use strict';
+const React = require("react");
 
 const App = React.createClass({
     render() {
