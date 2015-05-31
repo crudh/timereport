@@ -23,7 +23,7 @@
     "gulp-nodemon": "^1.0.5"
   },
   "scripts": {
-    "start": "iojs server/server.js"
+    "start": "node --harmony_arrow_functions server/server.js"
   },
   "keywords": [
     "time",

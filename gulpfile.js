@@ -37,7 +37,7 @@ gulp.task('nodemon', function() {
         ignore: ['public', 'client'],
         ext: 'html js',
         execMap: {
-            js: 'iojs --harmony_arrow_functions'
+            js: 'node --harmony_arrow_functions'
         }
     });
 });

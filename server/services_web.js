@@ -1,4 +1,4 @@
-const init = (app) => {
+const init = app => {
     "use strict";
 
     app.get('/services', (req, res) => {
@@ -7,6 +7,3 @@ const init = (app) => {
 };
 
 exports.init = init;
-
-
-
