@@ -10,4 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 tasks.init(app);
 
+app.get('*', (req, res) => {
+  res.sendFile("public/index.html");
+});
+
 app.listen(3000);

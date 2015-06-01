@@ -14,6 +14,7 @@ const App = React.createClass({
         return (
           <div>
             <div>
+              <Link to="index">Main</Link>
               <Link to="tasks">Tasks</Link>
             </div>
             <RouteHandler/>
@@ -24,7 +25,7 @@ const App = React.createClass({
 
 const routes = (
   <Route handler={App}>
-    <DefaultRoute handler={IndexView}/>
+    <DefaultRoute name="index" handler={IndexView}/>
     <Route name="tasks" path="tasks" handler={TasksView}/>
     <NotFoundRoute handler={NotFoundView}/>
   </Route>
