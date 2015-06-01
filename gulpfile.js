@@ -5,7 +5,7 @@ var nodemon = require("gulp-nodemon");
 
 var paths = {
     serverMain: "./server/server.js",
-    clientMain: "./client/js/main.js",
+    clientMain: "./client/js/app.js",
     publicDir: "./public",
     jsFiles: ["./client/js/**/*.js"],
     htmlFiles: ["./client/index.html"]
