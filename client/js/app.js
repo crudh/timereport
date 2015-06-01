@@ -1,3 +1,6 @@
+require("babelify/polyfill");
+require("whatwg-fetch");
+
 const React = require("react");
 const Router = require("react-router");
 const { Route, DefaultRoute, NotFoundRoute, RouteHandler,  Link } = Router;
