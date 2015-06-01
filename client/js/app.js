@@ -1,5 +1,6 @@
 require("babelify/polyfill");
 require("whatwg-fetch");
+require("./core/flux/flux");
 
 const React = require("react");
 const Router = require("react-router");
