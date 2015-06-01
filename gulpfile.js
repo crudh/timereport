@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var concat = require("gulp-concat");
 var browserify = require("gulp-browserify");
 var nodemon = require("gulp-nodemon");
+var sourcemaps = require("gulp-sourcemaps");
 
 var paths = {
     serverMain: "./server/server.js",
@@ -17,7 +18,9 @@ gulp.task("js", function() {
             transform: ["babelify"],
             debug: true
         }))
+        .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(concat("bundle.js"))
+        .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest(paths.publicDir));
 });
 
