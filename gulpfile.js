@@ -10,7 +10,7 @@ var paths = {
     publicDir: "./public",
     jsFiles: ["./client/js/**/*.js"],
     htmlFiles: ["./client/index.html"]
-}
+};
 
 gulp.task("js", function() {
     gulp.src(paths.clientMain)

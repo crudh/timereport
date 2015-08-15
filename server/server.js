@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 tasks.init(app);
 
 app.get('*', (req, res) => {
-  res.sendFile("public/index.html", {"root": __dirname + "../public/"});
+  res.sendFile("public/index.html", {"root": __dirname + "/../public/"});
 });
 
 app.listen(3000);
