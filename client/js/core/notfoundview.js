@@ -1,13 +1,13 @@
-const React = require("react");
+import React from "react";
 
 const NotFoundView = React.createClass({
-    render() {
-        return (
-            <div>
-                <h1>Not Found</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1>Not Found</h1>
+      </div>
+    );
+  }
 });
 
-module.exports = NotFoundView;
+export default NotFoundView;

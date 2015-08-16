@@ -1,26 +1,25 @@
-require("babelify/polyfill");
-require("whatwg-fetch");
-require("./core/flux/flux");
+import "babelify/polyfill";
+import "whatwg-fetch";
+import "./core/flux/flux";
 
-const React = require("react");
-const Router = require("react-router");
-const {Route, DefaultRoute, NotFoundRoute, RouteHandler,  Link} = Router;
-const NotFoundView = require("./core/notfoundview");
-const IndexView = require("./indexview");
-const TasksView = require("./tasks/tasksview");
+import React from "react";
+import Router, {Route, DefaultRoute, NotFoundRoute, RouteHandler, Link} from "react-router"
+import NotFoundView from "./core/notfoundview";
+import IndexView from "./indexview";
+import TasksView from "./tasks/tasksview";
 
 const App = React.createClass({
-    render() {
-        return (
-          <div>
-            <div>
-              <Link to="index">Main</Link>
-              <Link to="tasks">Tasks</Link>
-            </div>
-            <RouteHandler/>
-          </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <div>
+          <Link to="index">Main</Link>
+          <Link to="tasks">Tasks</Link>
+        </div>
+        <RouteHandler/>
+      </div>
+    );
+  }
 });
 
 const routes = (
@@ -35,4 +34,4 @@ Router.run(routes, Router.HistoryLocation, Handler => {
   React.render(<Handler/>, document.getElementById("main"));
 });
 
-module.exports = App;
+export default App;

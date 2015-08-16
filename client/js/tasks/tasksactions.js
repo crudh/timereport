@@ -1,5 +1,4 @@
-const Flummox = require("flummox");
-const Actions = Flummox.Actions;
+import {Actions} from "flummox";
 
 class TasksActions extends Actions {
   addTask(content) {
@@ -7,4 +6,4 @@ class TasksActions extends Actions {
   }
 }
 
-exports.TasksActions = TasksActions;
+export default TasksActions;

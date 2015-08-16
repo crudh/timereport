@@ -1,12 +1,10 @@
-const Flummox = require("flummox").Flummox;
-const TasksStore = require("../../tasks/tasksstore");
-const TasksActions = require("../../tasks/tasksactions");
+import {Flummox} from "flummox";
+import TasksStore from "../../tasks/tasksstore";
+import TasksActions from "../../tasks/tasksactions";
 
 class Flux extends Flummox {
   constructor() {
     super();
-
-    console.log(TasksActions, TasksStore);
 
     this.createActions("tasks", TasksActions);
     this.createStore("tasks", TasksStore, this);
@@ -15,4 +13,4 @@ class Flux extends Flummox {
 
 const flux = new Flux();
 
-exports.flux = flux;
+export default flux;

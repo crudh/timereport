@@ -1,13 +1,13 @@
-const React = require("react");
+import React from "react";
 
 const TasksView = React.createClass({
-    render() {
-        return (
-            <div>
-                <h1>tasks</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1>tasks</h1>
+      </div>
+    );
+  }
 });
 
-module.exports = TasksView;
+export default TasksView;

@@ -1,5 +1,4 @@
-const Flummox = require("flummox");
-const Store = Flummox.Store;
+import {Store} from "flummox";
 
 class TasksStore extends Store {
   constructor(flux) {
@@ -16,4 +15,4 @@ class TasksStore extends Store {
   }
 }
 
-module.exports = TasksStore;
+export default TasksStore;

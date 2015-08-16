@@ -1,13 +1,13 @@
-const React = require("react");
+import React from "react";
 
 const Index = React.createClass({
-    render() {
-        return (
-            <div>
-                <h1>time report</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1>time report</h1>
+      </div>
+    );
+  }
 });
 
-module.exports = Index;
+export default Index;

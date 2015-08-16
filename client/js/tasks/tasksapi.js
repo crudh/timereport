@@ -1,5 +1,5 @@
-getTasks() {
+function getTasks() {
   return fetch("/services/tasks");
 }
 
-exports.getTasks = getTasks;
+export default getTasks;
