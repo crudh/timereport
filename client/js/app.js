@@ -3,7 +3,7 @@ import "whatwg-fetch";
 import "./core/flux/flux";
 
 import React from "react";
-import Router, {Route, DefaultRoute, NotFoundRoute, RouteHandler, Link} from "react-router"
+import Router, {Route, DefaultRoute, NotFoundRoute, RouteHandler, Link} from "react-router";
 import NotFoundView from "./core/notfoundview";
 import IndexView from "./indexview";
 import TasksView from "./tasks/tasksview";
